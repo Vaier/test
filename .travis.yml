@@ -4,5 +4,5 @@ compiler: gcc
 script:
 - g++ hello.cpp -o travis_gcc_cpp98
 - ./travis_gcc_cpp98
-- grof ./travis_gcc_cpp98_gprof > gprof.log
+- gprof ./travis_gcc_cpp98_gprof > gprof.log
 - head gprof.log -n 100
